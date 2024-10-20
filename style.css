@@ -1,3 +1,8 @@
+body {
+  background: url("img2.png") no-repeat center/cover;
+  
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +13,23 @@
     background-color: #ccc;
   }
   .container {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    width: 600px;
+  
+    align-items: center;
+    height: 650px;
     max-width: 900px;
+    max-height: 650px;
     margin: 0 auto;
+    background-color: rgba(0,0,0, 0.5);
   }
   
   .apply_box {
     max-width: 600px;
     padding: 20px;
-    background-color: white;
+    box-shadow: inset -5px -5px rgba(0,0,0, 0.5);
     margin: 0 auto;
     margin-top: 50px;
     box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
@@ -41,7 +55,10 @@
     font-size: 15px;
     margin-bottom: 5px;
   }
-  
+  .apply_box h1{
+    color: antiquewhite;
+    text-align: center;
+  }
   input,
   select,
   textarea {
